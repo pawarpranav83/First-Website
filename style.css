@@ -248,3 +248,18 @@ body {
     text-align: left;
     margin-bottom: 100px;
 }
+
+#video a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#video a:hover {
+    color: yellow;
+}
+
+.videoReal{
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
