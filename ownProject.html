@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ownProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="dragon.jpg" alt="Logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div id="new">
+        <form>
+            <h4 id="Name" class="fun">Enter your Name</h4>
+            <input type="text" id="name" class="input">
+            <h4 id="Age" class="fun">Enter your Age</h4>
+            <input type="number" id="age" class="input">
+            <h4 id="Gender" class="fun">Enter your Gender</h4>
+            <input type="text" id="gender" class="input">
+        </form>
+        <br>
+        <br>
+        <br>
+        <button id="saveAll" class="btn-sm">SAVE</button>
+        <button id="showPrevious" class="btn-sm">SHOW PREVIOUS ENTRIES</button>
+        <button id="delete" class="btn-sm">DELETE ALL</button>
+        <p id="dataShow"></p>
+</body>
+
+<script>
+
+    let del = document.getElementById("delete")
+    del.addEventListener("click", function () {
+        let data = document.getElementById("dataShow")
+        data.textContent = ""
+        info = []
+    })
+
+    let info = []
+    let bt = document.getElementById("showPrevious")
+    let h = document.getElementById("dataShow")
+
+
+
+    let c = document.getElementById("saveAll")
+    c.addEventListener("click", function () {
+        let x = document.getElementById("name")
+        let y = document.getElementById("age")
+        let z = document.getElementById("gender")
+        info.push(x.value)
+        info.push(y.value)
+        info.push(z.value)
+        x.value = ""
+        y.value = ""
+        z.value = ""
+        localStorage.setItem("information", JSON.stringify(info))
+    })
+
+    bt.addEventListener("click", function () {
+        h.innerHTML = 
+        h.innerHTML = "The previous entries are : "
+        let inform = JSON.parse(localStorage.getItem("information"))
+        for (let i = 0; i < info.length; i++) {
+            if (i % 3 === 0) {
+                h.innerHTML += "<hr id='line'>" + "<br>" + inform[i]
+            }
+            else {
+                h.innerHTML += "<br>" + inform[i]
+            }
+        }
+    })
+</script>
+
+</html>

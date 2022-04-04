@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fun:hover {
+    color: rgb(255, 251, 0)
+}
+
+.fun {
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+#search{
+    padding:15px;
+    margin-right:5px;
+}
+
+body {
+    background-color: #0889d3;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.button {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    border: 2px black
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.input:focus {
+    background: rgb(135, 201, 255);
+}
+
+#dataShow {
+    margin-top: 50px;
+    background: rgba(13, 200, 229, 0);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background: rgb(0, 0, 0);
+    margin-bottom: 150px;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-list li {
+    list-style: none;
+    display: flex;
+    padding: 26px 30px;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 35%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.right-nav {
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn{
+    font-size:17px;
+}
+
+.btn-sm {
+    color: white;
+    background: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-top: 0px;
+}
+
+.btn-sm:hover {
+    color: yellow;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.446) url('new.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
