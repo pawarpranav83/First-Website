@@ -32,7 +32,11 @@
             <h4 id="Age" class="fun">Enter your Age</h4>
             <input type="number" id="age" class="input">
             <h4 id="Gender" class="fun">Enter your Gender</h4>
-            <input type="text" id="gender" class="input">
+            <select name="gender" id="gender">
+            <option value="none">Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
         </form>
         <br>
         <br>
@@ -40,6 +44,7 @@
         <button id="saveAll" class="btn-sm">SAVE</button>
         <button id="showPrevious" class="btn-sm">SHOW PREVIOUS ENTRIES</button>
         <button id="delete" class="btn-sm">DELETE ALL</button>
+
         <p id="dataShow"></p>
 </body>
 
@@ -73,8 +78,8 @@
     })
 
     bt.addEventListener("click", function () {
-        h.innerHTML = 
-        h.innerHTML = "The previous entries are : "
+        h.innerHTML =
+            h.innerHTML = "The previous entries are : "
         let inform = JSON.parse(localStorage.getItem("information"))
         for (let i = 0; i < info.length; i++) {
             if (i % 3 === 0) {
