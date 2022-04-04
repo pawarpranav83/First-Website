@@ -201,10 +201,12 @@ body {
 
 .text-big {
     font-size: 41px;
+    text-align: left;
 }
 
 .text-small {
     font-size: 18px;
+    text-align: left;
 }
 
 .firstSection2 {
@@ -237,9 +239,12 @@ body {
 .text-big2 {
     font-size: 41px;
     margin-left: 50px;
+    text-align: left;
 }
 
 .text-small2 {
     font-size: 18px;
     margin-left: 50px;
+    text-align: left;
+    margin-bottom: 100px;
 }
