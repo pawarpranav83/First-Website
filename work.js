@@ -9,8 +9,6 @@ let del = document.getElementById("delete")
     let bt = document.getElementById("showPrevious")
     let h = document.getElementById("dataShow")
 
-
-
     let c = document.getElementById("saveAll")
     c.addEventListener("click", function () {
         let x = document.getElementById("name")
