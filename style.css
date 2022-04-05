@@ -262,4 +262,9 @@ body {
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
+    /* border: 10px solid black; */
+}
+
+.video_2{
+    margin-bottom: 420px;
 }
